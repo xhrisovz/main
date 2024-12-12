@@ -34,6 +34,7 @@ class TicketBookingSystem:
     def __init__(self):
         self.events = []
         self.users = []
+        print("Система бронирования билето запущена.")
 
     def add_event(self, name, date, available_tickets):
         self.events.append(Event(name, date, available_tickets))
