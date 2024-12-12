@@ -79,4 +79,4 @@ booking_system.list_events()
 random_bron = random.randint(1,5)
 event_names = [event.name for event in booking_system.events]
 random_event_name = random.choice(event_names)
-booking_system.book_ticket(user, random_ivent_name, random_bron)
+booking_system.book_ticket(user, random_event_name, random_bron)
