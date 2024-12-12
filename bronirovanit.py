@@ -59,6 +59,12 @@ class TicketBookingSystem:
                 return
         print("Мероприятие не найдено.")
 
+# Добавление мероприятий
+random_bilet1 = random.randint(0, 256)
+random_bilet2 = random.randint(0, 256)
+booking_system.add_event("Вечеринка в Строителе", "2024-12-20", random_bilet1)
+booking_system.add_event("Концерт в Форуме", "2024-12-22", random_bilet2)
+
 # Бронирование билетов
 random_bron = random.randint(1,5)
 event_names = [event.name for event in booking_system.events]
