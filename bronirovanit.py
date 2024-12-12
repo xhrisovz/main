@@ -59,11 +59,21 @@ class TicketBookingSystem:
                 return
         print("Мероприятие не найдено.")
 
+# Пример использования системы
+booking_system = TicketBookingSystem()
+
 # Добавление мероприятий
 random_bilet1 = random.randint(0, 256)
 random_bilet2 = random.randint(0, 256)
 booking_system.add_event("Вечеринка в Строителе", "2024-12-20", random_bilet1)
 booking_system.add_event("Концерт в Форуме", "2024-12-22", random_bilet2)
+
+# Регистрация пользователя
+user = User("Рома", "xasanator@mail.ru")
+user.register()
+
+# Просмотр доступных мероприятий
+booking_system.list_events()
 
 # Бронирование билетов
 random_bron = random.randint(1,5)
